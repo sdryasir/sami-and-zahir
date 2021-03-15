@@ -5,9 +5,7 @@ function Home() {
     return (
         <div className="container">
             <div className="row">
-                <div className="col-md-4">
-                    <Card data={products} />
-                </div>
+                <Card data={products} />
             </div>
         </div>
     )

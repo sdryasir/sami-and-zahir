@@ -28,6 +28,16 @@ export const products = [
         price: 195,
         stock: 10,
         category: "everyday-value",
+    },
+    {
+        id: 4,
+        title: "Family Bucket",
+        slug: "krunch-burger",
+        image: "3.png",
+        description: "Enjoy the crispy chicken fillet in a soft bun with spicy mayo and our signature sauce with fresh lettuce.",
+        price: 195,
+        stock: 10,
+        category: "everyday-value",
     }
 ]
 
