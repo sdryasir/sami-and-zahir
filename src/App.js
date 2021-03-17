@@ -11,6 +11,13 @@ function App() {
     pqty: 5
   })
 
+  const handleIncrement = () => {
+    setProduct({ ...product, pprice: product.pprice + 1 })
+  }
+  const handleDecrement = () => {
+    setProduct({ ...product, pprice: product.pprice - 1 })
+  }
+
   return (
     <>
       {/* <Header />
@@ -19,8 +26,8 @@ function App() {
       <p>Product Name: {product.pname}</p>
       <p>Product Price: {product.pprice}</p>
       <p>Product Quantity: {product.pqty}</p>
-      <button onClick={() => setProduct(product.pprice + 1)}>+</button>
-      <button onClick={() => setProduct(product.pprice - 1)}>-</button>
+      <button onClick={handleIncrement}>+</button>
+      <button onClick={handleDecrement}>-</button>
 
     </>
   );
